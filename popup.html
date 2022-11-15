@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+    </head>
+   
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Display Date and Time in Javascript</title>
+        
+    </head>
+    <body>
+         <div class="if">
+       
+<!-- Script by hscripts.com -->
+<script type="text/javascript">
+    function daysleftinyear(date1)
+    {
+    var year = date1.getFullYear();
+    var date2 = new Date(year,11,31);
+    var diff = Date.UTC(date2.getYear(),date2.getMonth(),date2.getDate(),0,0,0)
+    - Date.UTC(date1.getYear(),date1.getMonth(),date1.getDate(),0,0,0);
+    var daysleft = diff/1000/60/60/24;
+    return daysleft;
+    }
+    document.write(daysleftinyear(new Date()));
+    </script>
+    <!-- Script by hscripts.com -->
+    
+             
+         </div>
+    </body>
+   
+
+</html>
